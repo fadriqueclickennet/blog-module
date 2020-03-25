@@ -1,0 +1,40 @@
+{
+  "name": "fadriqueclickennet/blog-module",
+  "type": "clickennet-module",
+  "description": "A blog module for ClickennetCMS.",
+  "keywords": [
+    "blog",
+    "clickennet",
+    "journal"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "fadriqueclickennet",
+      "email": "fadriqueclickennet@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3",
+    "composer/installers": "~1.0",
+    "fadriqueclickennet/core-module": "dev-master",
+    "fadriqueclickennet/media-module": "dev-master",
+    "fadriqueclickennet/tag-module": "dev-master",
+    "doctrine/dbal": "^2.6.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5",
+    "orchestra/testbench": "3.8.*",
+    "fzaninotto/faker": "~1.5",
+    "friendsofphp/php-cs-fixer": "^2.7"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Modules\\Blog\\": ".",
+      "Modules\\": "Modules/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
